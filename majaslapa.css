@@ -1,0 +1,372 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #eee;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff66cc;
+}
+
+
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff66cc;
+    color: #000;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 180px;
+    z-index: 10;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    color: #fff;
+    display: block;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 10px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 102, 204, 0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #ff66cc;
+}
+
+.learn-more {
+    background: linear-gradient(45deg, #ff66cc, #ff3399);
+    border: none;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: linear-gradient(45deg, #ff3399, #ff0080);
+    transform: scale(1.05);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ff66cc;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #ff66cc;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+.link {
+    color: #ff66cc;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pricing {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.pricing h2 {
+    text-align: center;
+    color: #ff66cc;
+    margin-bottom: 20px;
+}
+
+.pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f1f1f;
+    color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing th, .pricing td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.pricing th {
+    background-color: #222;
+    color: #ff66cc;
+}
+
+.pricing tr:hover {
+    background-color: #2a2a2a;
+}
+
+.about-us {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+}
+
+.about-us h2 {
+    color: #ff66cc;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    color: #eee;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-content form input,
+.modal-content form select,
+.modal-content form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.modal-content form button {
+    background-color: #ff66cc;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content form button:hover {
+    background-color: #ff3399;
+}
+
+.certificates, .guarantee {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+}
+
+.certificates h2, .guarantee h2 {
+    color: #ff66cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cert-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cert-logos img {
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.cert-logos img:hover {
+    transform: scale(1.1);
+}
+
+.guarantee p {
+    color: #eee;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header, nav, footer {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+
+body.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark header,
+body.dark nav,
+body.dark footer {
+    background-color: #1f1f1f;
+    color: #ff66cc; 
+}
+
+
+.card {
+    background-color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+
+button {
+    background: linear-gradient(45deg, #ff66cc, #ff99cc);
+    color: #000;
+}
+
+body.dark button {
+    background: linear-gradient(45deg, #ff3399, #ff66cc);
+    color: #fff;
+}
+
+nav ul li a {
+    color: black;  
+}
+
+body.dark nav ul li a {
+    color: #ff66cc;  
+}
+

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoServiss "TurboFix"</title>
+    <link rel="stylesheet" href="majaslapa.css">
+</head>
+<body>
+
+   
+    <header>
+        <button id="themeToggle">Pārslēgt tēmu</button>
+        <h1>AutoServiss "PinkTorque"</h1>
+    </header>
+
+   
+    <nav>
+        <ul>
+            <li><a href="#sakums">Sākums</a></li>
+            <li><a href="#about">Par mums</a></li>
+            <li><a href="#kontakti">Kontakti</a></li>
+            <li><a href="#cenas">Cenas</a></li>
+            <li>
+                <a href="#pakalpojumi">Pakalpojumi</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Eļļas maiņa</a></li>
+                    <li><a href="#">Bremžu remonts</a></li>
+                    <li><a href="#">Dzinēja diagnostika</a></li>
+                    <li><a href="#">Čipošana</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+ 
+    <main>
+        <div class="cards-container">
+          
+            <div class="card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.RR8kTGF-oJHAZoC4oy7e8QHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Eļļas maiņa">
+                <div class="card-content">
+                    <h2>Eļļas maiņa</h2>
+                    <p>Regulāra eļļas maiņa pagarina dzinēja mūžu un uzlabo tā darbību.</p>
+                    <button class="learn-more" data-modal="modal1">Uzzināt vairāk</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.a353024b3aac399bf8937bee88e228f6?rik=TZ5HXp333QiPRg&pid=ImgRaw&r=0" alt="Bremžu remonts">
+                <div class="card-content">
+                    <h2>Bremžu remonts</h2>
+                    <p>Droša braukšana sākas ar uzticamiem bremžu mehānismiem.</p>
+                    <button class="learn-more" data-modal="modal2">Uzzināt vairāk</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.2dENkQpSZFwILZ04Gism0AHaEJ?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dzinēja diagnostika">
+                <div class="card-content">
+                    <h2>Dzinēja diagnostika</h2>
+                    <p>Modernā diagnostika palīdz savlaicīgi atklāt un novērst problēmas.</p>
+                    <button class="learn-more" data-modal="modal3">Uzzināt vairāk</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.ronP-QrxbrEAf7ys9tKFEAHaFV?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Čipošana">
+                <div class="card-content">
+                    <h2>Čipošana</h2>
+                    <p>Uzlabo dzinēja jaudu un samazini degvielas patēriņu ar profesionālu čipošanu.</p>
+                    <button class="learn-more" data-modal="modal-chip">Uzzināt vairāk</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Eļļas maiņa</h2>
+            <p>Regulāra eļļas maiņa nodrošina dzinēja ilgmūžību, samazina berzi un uzlabo efektivitāti. Mēs izmantojam tikai augstas kvalitātes eļļas un filtrus.
+                <h3>Motoreļļas maiņa:</h3>
+                <h4>Eļļa tiek nomainīta atbilstoši ražotāja ieteikumiem vai pēc nobraukuma/ilguma. Parasti ik pēc 10,000–15,000 km vai 12 mēnešiem, atkarībā no eļļas veida un ekspluatācijas apstākļiem.</h4>
+                
+                <h3>Eļļas filtra maiņa:</h3>
+                <h4>Vienlaikus ar eļļas maiņu tiek nomainīts eļļas filtrs, lai nodrošinātu, ka jaunā eļļa nav piesārņota ar veco nogulsnēto netīrumu.</h4>
+                
+                <h3>Simptomi, kas norāda uz eļļas maiņu:</h3>
+                
+               <h4>Motora gaismas indikators (CHECK ENGINE / OIL) deg</h4>
+                
+                <h4>Eļļa kļuvusi tumša vai piesārņota</h4>
+                
+                <h4>Palielināta motora trokšņa līmeņa vai vibrācijas</h4>
+                
+                <h3>Servisa pieeja:</h3>
+                <h4>Vecā eļļa tiek iztukšota, filtrs nomainīts, sistēma uzpildīta ar jaunu eļļu, kas atbilst ražotāja specifikācijām. Pēc maiņas tiek pārbaudīts eļļas līmenis un nodrošināta motora normāla darbība.</h4></p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bremžu remonts</h2>
+            <p>Veicam pilnu bremžu sistēmas pārbaudi, kluču un disku nomaiņu, kā arī hidraulisko elementu pārbaudi drošai braukšanai.
+
+                <h3>Bremžu kluču maiņa:</h3>
+                <h4>Priekšējās vai aizmugurējās bremzes tiek nomainītas, ja kluči ir nolietojušies līdz minimālajam biezumam vai dzirdamas čīkstoņas/bremzējot trokšņi. Maiņa tiek veikta pāros uz vienas ass.</h4>
+                
+                <h3>Bremžu disku maiņa:</h3>
+                <h4></h4>Diskus nomaina, ja tie ir nodiluši, deformēti vai ieplaisājuši. Bieži vien diski tiek mainīti kopā ar klučiem.</h4>
+                
+                <h3>Bremžu šķidruma maiņa:</h3>
+                <h4>Ieteicams veikt ik pēc 2 gadiem vai pēc ražotāja norādījumiem, lai nodrošinātu drošu bremzēšanu un novērstu sistēmas koroziju</h4>.
+                
+                <h4>Simptomi, kas norāda uz bremžu nomaiņu:</h4>
+                
+                <h4>Bremzējot dzirdamas čīkstoņas vai skrāpēšana</h4>
+                
+                <h4>Bremžu pedālis “mīksts” vai auto vilkstas uz sāniem</h4>
+                
+                <h4>Palielināta bremzēšanas distance</h4>
+                
+                <h3>Servisa pieeja:</h3>
+                Bremžu kluči tiek nomainīti uz oriģinālajiem vai kvalitatīviem analogiem, suporti pārbaudīti, nepieciešamības gadījumā eļļoti, bremžu sistēma iztīrīta un uzpildīts jauns šķidrums. Pēc maiņas tiek veikta testēšana, lai pārliecinātos par drošu darbību.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Dzinēja diagnostika</h2>
+            <p>Ar mūsdienīgām ierīcēm identificējam kļūdas un sniedzam detalizētu pārskatu par dzinēja un elektronikas darbību.
+                <h4>Kas ir dzinēja diagnostika:</h4>
+                <h3>Dzinēja diagnostika ir elektroniskā sistēma, kas pārbauda motora darbību, elektroniskos sensorus un vadības vienības, lai konstatētu kļūmes vai traucējumus.</h3>
+
+                <h4>Kad nepieciešama diagnostika:</h4>
+
+                <h3>Deg dzinēja kontrolpaneļa indikators (CHECK ENGINE)</h3>
+
+                <h3>Neparasta motora darbība (vibrācijas, jauda samazināta, dūmi, neparastas skaņas)</h3>
+
+                <h3>Regulāra profilaktiskā pārbaude, lai novērstu iespējamas problēmas</h3>
+
+                <h4>Servisa pieeja:</h4>
+
+                <h3>Pievienojam diagnostikas ierīci pie automašīnas OBD portam.</h3>
+
+                <h3>Nolasām kļūdu kodus un analizējam to nozīmi.</h3>
+
+                <h3>Veicam vizuālo pārbaudi un nepieciešamības gadījumā testējam sensorus, spoles, ieplūdes sistēmu, izplūdes sistēmu un citas motoram svarīgas daļas.</h3>
+
+                <h3>Sagatavojam klientam diagnostikas atskaiti ar konstatētajām kļūdām un ieteikumiem turpmākai rīcībai.</h3>
+
+                <h4>Ieguvumi:</h4>
+
+                <h3>Precīza problēmas lokalizācija</h3>
+
+                <h3>Izmaksu optimizācija, remontējot tikai bojāto komponentu</h3>
+
+                <h3>Profilaktiska problēmu novēršana, kas var novērst nopietnāku bojājumu</h3>
+            </p>
+        </div>
+    </div>
+
+   
+    <div id="modal-chip" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Čipošana (ECU optimizācija)</h2>
+            <p>
+                Čipošana jeb dzinēja programmatūras optimizācija ir process, kura laikā tiek pielāgota Tava auto vadības bloka (ECU) programma, 
+                lai uzlabotu veiktspēju un ekonomiju, saglabājot drošību un dzinēja ilgmūžību.
+            </p>
+            <h3>Ko mēs darām:</h3>
+            <ul>
+                <li>Veicam pilnu dzinēja diagnostiku pirms darbu uzsākšanas;</li>
+                <li>Saglabājam oriģinālo ECU programmu drošai atgriešanai vajadzības gadījumā;</li>
+                <li>Optimizējam degvielas kartes, aizdedzes un spiediena parametrus konkrētam modelim;</li>
+                <li>Pēc čipošanas veicam testu braucienu un precīzu regulēšanu;</li>
+                <li>Piedāvājam gan ECO, gan PERFORMANCE režīmu čipošanu;</li>
+                <li>Izdodam protokolu un sniedzam garantiju par paveikto darbu.</li>
+            </ul>
+            <p><strong>Rezultāts:</strong> līdz pat +25% jaudas pieaugums, labāka gāzes pedāļa reakcija un iespēja samazināt degvielas patēriņu.</p>
+            <p><strong>Piezīme:</strong> čipošanas efekts ir atkarīgs no automobiļa modeļa un dzinēja tipa.</p>
+        </div>
+    </div>
+
+    <section class="pricing" id="cenas" class="cenas">
+        <h2>Pakalpojumu cenrādis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pakalpojums</th>
+                    <th>Cena (€)</th>
+                    <th>Darba ilgums (aptuveni)</th>
+                    <th>Akcijas / atlaides</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Eļļas un filtru maiņa</td>
+                    <td>9,90 – 35</td>
+                    <td>30 – 60 min</td>
+                    <td>10% atlaide šonedēļ</td>
+                </tr>
+                <tr>
+                    <td>Bremžu uzliku/diska maiņa</td>
+                    <td>10 – 500</td>
+                    <td>1 – 2 h</td>
+                    <td>Sestdienās 5% atlaide</td>
+                </tr>
+                <tr>
+                    <td>Dzinēja diagnostika</td>
+                    <td>14,22 – 70</td>
+                    <td>30 – 90 min</td>
+                    <td>Akcija jauniem klientiem – 20%</td>
+                </tr>
+                <tr>
+                    <td>Čipošana / ECU optimizācija</td>
+                    <td>150 – 525</td>
+                    <td>2 – 4 h</td>
+                    <td>Atkarīgs no auto modeļa</td>
+                </tr>
+                <tr>
+                    <td>Zobsiksnas maiņa</td>
+                    <td>40 – 200</td>
+                    <td>1,5 – 3 h</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Tehniskās apskates sagatavošana</td>
+                    <td>30,88 – 100</td>
+                    <td>30 – 60 min</td>
+                    <td>10% atlaide komplektā ar diagnostiku</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    < <section id="about" class="about-us">
+        <h2>Par mums</h2>
+        <p>
+            AutoServiss <strong>PinkTorque</strong> ir profesionāls autoserviss, kas piedāvā pilnu auto apkopi, remontu un dzinēju optimizāciju.
+            Mūsu komandā strādā pieredzējuši mehāniķi, kas izmanto modernu diagnostiku un kvalitatīvas detaļas, lai nodrošinātu drošu un ilgmūžīgu auto darbību.
+        </p>
+        <p>
+            Mēs specializējamies eļļas un filtru maiņā, bremžu sistēmas remontā, dzinēja diagnostikā, čipošanā un citos pakalpojumos. 
+            Mūsu mērķis ir nodrošināt kvalitatīvu servisu par saprātīgu cenu, sniedzot garantiju visiem veiktajiem darbiem.
+        </p>
+    </section>
+
+    
+
+
+
+<section class="guarantee">
+    <h2>Garantijas un drošība</h2>
+    <p>
+        Mēs nodrošinām 100% kvalitāti visiem veiktajiem darbiem. 
+        Visi remontdarbi ir ar garantiju, un mūsu komanda strādā ar modernām diagnostikas iekārtām, 
+        lai nodrošinātu jūsu auto drošību un ilgtermiņa uzticamību.
+    </p>
+    <p>
+        Izvēloties <strong>PinkTorque</strong>, jūs saņemat profesionālu servisu, kvalitatīvas detaļas un drošu braukšanu.
+    </p>
+</section>
+
+<section id="kontakti" class="kontakti">
+    <h2>Par mums</h2>
+    
+        <h3>📞 Tālr.: +371 295 12345</h3>
+        <h3>✉️ E-pasts: info@pinktorque.lv</h3>
+        <h3>🏠 Adrese: Rīgas iela 10, Rīga, Latvija</h3>
+    
+</section>
+
+
+    <button id="openBooking">Rezervēt vietu</button>
+    
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Rezervācijas forma</h2>
+            <form id="bookingForm">
+                <label for="name">Vārds:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Telefons:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="service">Izvēlies pakalpojumu:</label>
+                <select id="service" name="service">
+                    <option value="eļļa">Eļļas maiņa</option>
+                    <option value="bremzes">Bremžu remonts</option>
+                    <option value="dzinējs">Dzinēja diagnostika</option>
+                    <option value="chipošana">Čipošana</option>
+                </select>
+    
+                <label for="date">Datums:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <button type="submit">Rezervēt</button>
+            </form>
+        </div>
+    </div>
+
+
+    
+ 
+    <footer>
+        <p>© 2025 PinkTorque AutoServiss | Sekojiet mums: 
+            <a href="#" class="link">Facebook</a> | 
+            <a href="#" class="link">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="majaslapa.js"></script>
+</body>
+</html>
